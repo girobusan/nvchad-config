@@ -17,6 +17,7 @@ local M = {}
 
 M.ui = {
   theme = "gruvchad",
+  theme_toggle={"gruvchad" , "gruvbox"},
 
   hl_override = {
   	Comment = { italic = true },
@@ -24,13 +25,9 @@ M.ui = {
   },
     statusline = {
     theme = "default", -- default/vscode/vscode_colored/minimal
-    -- default/round/block/arrow separators work only for default statusline theme
-    -- round and block will work for minimal theme only
     separator_style = "default",
-    order = { "mode", "file", "git", "lua_keymap", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },nil,
     modules ={  lua_keymap =  lua_keymap },
-    overriden_modules =  function (modules)
-      return  table.insert(modules , 2 ,lua_keymap ) end,
+    order = { "mode", "file", "git", "lua_keymap", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },nil,
     },
 
   nvdash = {

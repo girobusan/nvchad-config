@@ -23,4 +23,6 @@ vim.opt.iminsert = 0
 vim.opt.imsearch = 0
 vim.opt.spell = false --{ "spelllang" , "en_us,ru_ru,ru_yo" }
 vim.opt.spelllang = "en_us,ru_ru,ru_yo"
--- " Чтобы вместо Ctrl-^ нажимать Ctrl-L
+vim.o.cursorlineopt = "both"
+
+vim.o.guifont = "FiraCode Nerd Font:h11"

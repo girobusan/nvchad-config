@@ -8,6 +8,7 @@ map("i", "<C-L>", "<C-^>", { noremap = true , desc="Toggle language"})
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map( "n" ,"<leader>fp" , "<cmd>Telescope projects<CR>" ,{ noremap=true , desc="Telescope projects"})
+map( {"n" , "i"} , "<leader>;" , "<cmd>Nvdash<CR>" , {  noremap=true , desc="Start screen"})
 
 -- map({ "n", "i", "v"  }, "<C -s>", "<cmd> w <cr>")
 
